@@ -48,3 +48,21 @@ footer{display:flex;justify-content:space-between;gap:20px;padding:28px 7%;backg
 .chat-input{display:flex;border-top:1px solid #2a5960}.chat-input input{flex:1;background:#071417;color:white;border:none;padding:14px;outline:none}.chat-input button{background:#52ffae;color:#041012;border:none;padding:0 16px;font-weight:900;cursor:pointer}
 @media(max-width:1050px){.navbar{flex-direction:column;gap:20px}.menu{flex-wrap:wrap;justify-content:center}.hero-grid,.feature{grid-template-columns:1fr}.stats,.service-grid,.form-row{grid-template-columns:1fr 1fr}.image-grid{grid-template-columns:1fr 1fr}h1{font-size:54px}}
 @media(max-width:650px){.stats,.service-grid,.image-grid,.form-row{grid-template-columns:1fr}h1{font-size:42px}h2{font-size:34px}.menu a{font-size:14px}footer{flex-direction:column;text-align:center}}
+.main-logo{
+width:180px;
+margin-bottom:20px;
+filter:drop-shadow(0 0 25px #00e5ff);
+animation:floatLogo 4s ease-in-out infinite;
+}
+
+@keyframes floatLogo{
+0%{
+transform:translateY(0px);
+}
+50%{
+transform:translateY(-10px);
+}
+100%{
+transform:translateY(0px);
+}
+}
